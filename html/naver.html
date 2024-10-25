@@ -15,13 +15,41 @@
 
         header {
             border: 1px solid black;
-        }
-        header section{
             background: green;
             background: linear-gradient(to right, rgb(47, 235, 47), rgba(201, 119, 201, 0.806));
             border: 1px dotted red
         }
+        
+        section.tophead{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+        div.tophead_a{
+            display: flex;
+            justify-content: row;
+        }
+        div.tophead_b{
+            display: flex;
+            justify-content: row;
+        }
 
+        section.middlehead{
+            display: flex;
+            justify-content: space-between
+        }
+        div.middlehead_a{
+            display: flex;
+            justify-content: row;
+        }
+        div.middlehead_b{
+            display: flex;
+            justify-content: row;
+        }
+        nav{
+            border: 1px solid black;
+            background-color: red;
+        }
 
         div.img {
             border: 1px solid black;
@@ -35,17 +63,16 @@
             justify-content: row;
         }
         main div{
-            border: 1px solid black;
             height: 500px;
             width: 50%;
         }
         main aside{
-            border: 1px solid red;
+            border: 3px solid red;
             height: 500px;
             width: 50%;
         }
         div section{
-            border: 1px solid rgb(136, 0, 255);
+            border: 5px solid rgb(136, 0, 255);
             height: 250px;
         }
        
@@ -58,15 +85,52 @@
 <body>
         <header>
             <section class="tophead">
-                <p>tophead</p>
+                <div class="tophead_a">
+                    <p>naver</p>
+                    <p>네이버페이</p>
+                </div>
+                <div class="tophead_b">
+                    <p>장바구니</p>
+                    <p>로그인</p>
+                    <p>목록</p>
+                </div>
             </section>
+
             <section class="middlehead">
-                <p>middlehead</p>
-            </section>
-            <section class="bothead">
-                <p>bothead</p>
+                <div class="middlehead_a">
+                    <p>쇼핑</p>
+                    <p>쇼핑라이브</p>
+                    <p>검색창</p>
+                    <p>상세검색</p>
+                    <p>카테고리 더보기</p>
+                </div>
+                <div class="middlehead_b">
+                    <p>쇼핑베스트</p>
+                    <p>|</p>
+                    <p>쇼핑마이</p>
+                </div>
             </section>
         </header>
+
+        <nav>
+            <a href="#">홈</a>
+            <a href="#">오늘행사</a>
+            <a href="#">쿠폰/혜택</a>
+            <a href="#">슈퍼적립</a>
+            <a href="#">도착보장</a>
+            <a href="#">fashionTown</a>
+            <a href="#">럭셔리</a>
+            <a href="#">리빙윈도</a>
+            <a href="#">푸드윈도</a>
+            <a href="#">장보기</a>
+            <a href="#">키즈윈도</a>
+            <a href="#">펫</a>
+            <a href="#">플레이윈도</a>
+            <a href="#">아트윈도</a>
+            <p>|</p>
+            선물샵
+
+        </nav>
 
         <div class ="img">
             <p>image</p>
