@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        footer{
+            border: 2px solid red;
+            height: 30vh
+        }
+        /*footer영역의 메뉴부분 */
+        .menu{
+            width: 960px;
+            border: 2px dotted blue;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        .menu_item{
+            width: 500px;
+            border: 1px solid black;
+            height: 50px;
+            padding: 5px;
+        }
+        .menu_icon{
+            width: 300px;
+            border: 1px solid black;
+            height: 50px;
+            padding: 5px;
+        }
+        .menu_item ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .menu_item li a, .menu_icon a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .menu_icon{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+   <footer>
+    <div class="menu">
+        <div class="menu_item">
+            
+                <ul>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                    <li><a href="#" target="_blank" ></a>소개</li>
+                </ul>
+            
+        </div>
+        <div class="menu_icon">
+            <img src="./ch04_media/cherry.png" alt="아이콘" width="30px">
+            <img src="./ch04_media/cherry.png" alt="아이콘" width="30px">
+            <img src="./ch04_media/cherry.png" alt="아이콘" width="30px">
+            <img src="./ch04_media/cherry.png" alt="아이콘" width="30px">
+            <a href="#" target="_blank">가족회사소개</a>
+        </div>
+    <div class="menu_content">
+        <div class="menu_content_logo">
+
+        </div>
+        <div class="menu_content_qna">
+
+        </div>
+    </div>    
+    </div>
+   </footer> 
+</body>
+</html>
