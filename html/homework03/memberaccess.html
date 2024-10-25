@@ -9,6 +9,7 @@
             border: 1px solid black;
             border-collapse: collapse;
             height: 500px;
+            
         }
         thead{
             background-color: rgb(73, 120, 231);
@@ -24,8 +25,9 @@
             
         }
         .sr {
-            
-            
+            display: flex;
+            justify-content: center;
+            margin: 20px;
         }
     </style>
 </head>
@@ -81,7 +83,11 @@
            </tr>
            <tr>
             <th>생일:</th>
-            <td><input type="date"></td>
+            <td>
+                <input type="number">년
+                <input type="number" min="1" max="12">월
+                <input type="number" min="1" max="31">일
+            </td>
            </tr>
            <tr>
             <th>관심분야:</th>
@@ -97,15 +103,15 @@
            <tr>
             <th>자기소개</th>
             <td>
-                <textarea cols="8W0" rows="4"></textarea>
+                <textarea cols="80" rows="4"></textarea>
             </td>
            </tr>
            <tr>
             <th>약관동의</th>
             <td>
-                <input type="checkbox">만 14세 이상입니다
-                <input type="checkbox">이용약관 동의 내용보기
-                <input type="checkbox">개인정보 수집 및 이용 동의 내용보기
+                <p><input type="checkbox">만 14세 이상입니다 </p>
+                <p><input type="checkbox">이용약관 동의 내용보기 <sub><a href="#"><u>내용보기</u></a></sub></p>
+                <p><input type="checkbox">개인정보 수집 및 이용 동의 내용보기 <sub><a href="#"><u>내용보기</u></a></sub></p>
             </td>
            </tr>
         </tbody>
