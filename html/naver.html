@@ -23,30 +23,24 @@
         }
 
 
-        div.img {
+        nav.img{
             border: 1px solid black;
-            height: 100px;
-        }
-
-
-        main {
-            border: 1px solid black;
-            display: flex;
-            justify-content: row;
-        }
-        main div{
-            border: 1px solid black;
-            height: 500px;
             width: 50%;
+            margin: 20px;
         }
-        main aside{
+        nav.a{
+            border: 1px solid black;
+            width: 50%;
+            margin: 20px;
+        }
+        nav.b{
+            border: 1px solid black;
+            width: 50%;
+            margin: 20px;
+        }
+        section.article{
             border: 1px solid red;
-            height: 500px;
-            width: 50%;
-        }
-        div section{
-            border: 1px solid rgb(136, 0, 255);
-            height: 250px;
+            width: 500px;
         }
        
 
@@ -63,27 +57,26 @@
             <section class="middlehead">
                 <p>middlehead</p>
             </section>
-            <section class="bothead">
-                <p>bothead</p>
-            </section>
+            <nav>
+                <p>nav</p>
+            </nav>
         </header>
 
-        <div class ="img">
-            <p>image</p>
-        </div>
+
 
         <main>
-            <div>
-                <section>
-                    <p>sectionA</p>
-                </section>
-                <section>
-                    <p>sectionB</p>
-                </section>
-             </div>
-            <aside>
-                <p>aside</p>
-            </aside>
+            <nav class="img">
+                <p>image</p>
+            </nav>
+            <nav class="a">
+                <p>nav1</p>
+            </nav>
+            <nav class="b">
+                <p>nav2</p>
+            </nav>
+            <section class="article">
+                <p>article</p>
+            </section>
         </main>
 
 
