@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a1 = new Array(0,1,2,3,4);
+        let a2 = [9,8,7,6,5];
+        document.write(`a1 = [${a1}] <br>`);
+        document.write(`a2 = [${a2}] <br>`);
+        let a3 = a1.concat(a2);
+        document.writeln(`a1.concat(a2) : [${a3}] <br>`);
+
+        //필터링을 진행하는 함수
+        function filterValue(item){
+            return item > 7;
+        }
+        //item : 9, 8, 7, 6, 5
+        let a4 = a2.filter(function(item, index, a2Array) {
+            console.log(item, index, a2Array);
+            return item > 7;
+        });
+
+        document.write('a2.filter:[${a4}]');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
