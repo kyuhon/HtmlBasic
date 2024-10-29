@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <p>궁금한 날짜를 입력하세요</p>
+        <input type="number" name="year" id="year" size="4"> <br>
+        <input type="number" name="month" id="month" min="1" max="12"> <br>
+        <input type="number" name="day" id="day" min="1" max="31">
+        <!-- min, max입력하면 size조정이 안됨 -->
+        <button type="button">계산</button>
+    </form>
+    <p id="today"></p>
+    <p id="result"></p>
+    
+    <script>
+        
+        function calculateDate(){
+            //ui 객체
+            const year = window.document.querySelector("#year").value;
+            const month = window.document.querySelector("#month").vlaue;
+            const day = window.document.querySelector("#day").value;
+            const today = window.document.querySelector("#today");
+            const result = window.document.querySelector("#result");
+            //현재날짜
+            const currentDay = new Date();
+            //사용자가 입력한날짜
+            let numMonth = parseInt(month)-1;
+            const userDay = new Date(year,numMonth,day);
+            //현재날짜 출력하기
+            today.textContent = `${currentDay.toLocaleString()}`;
+            //날짜 계산하기 사용자가입력한날짜 - 현재날짜
+            const timeDifference = userDay - currentDay;
+            result.innerHTML = `${timeDifference}`;
+
+        }
+    </script>
+</body>
+</html>
