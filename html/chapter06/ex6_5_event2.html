@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColor(colorName){
+            let h10bj = window.document.getElementsByTagName("h1");
+            window.console.log("h1obj:", h10bj)
+        }
+    </script>
+</head>
+<body>
+    <h1>change Color</h1>
+    <hr>
+    <button type="button" onclick="changeColor('red')">red</button>
+    <button type="button" onclick="changeColor('blue')">blue</button>
+    <button type="button" onclick="changeColor('yellow')">yellow</button>
+    <button type="button" onclick="changeColor('red')">red</button>
+</body>
+</html>
