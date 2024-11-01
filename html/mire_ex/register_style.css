@@ -1,0 +1,227 @@
+:root {
+    --border-color:gray;
+    --main-color:rgb(215,231,142);
+    --header-color:rgb(255,247,207);
+    --footer-color:rgb(255,231,149);
+    --table-color:rgb(245, 246, 247);
+    --button-color:white;
+    --register-button-color:rgb(45, 180, 0);
+    --page-main-color: rgb(45, 180, 0);;
+    --icon-color:blue;
+    --input-color:white;
+}
+body, h1, h2 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.main_page {
+    width: 80vw;
+    padding: 10px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    border: 1px dotted var(--border-color);
+    margin: 10px;
+    background-color: var(--header-color);
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo i {
+    font-size: 2rem;
+    margin: 0px 10px 0px 40px;
+}
+.header_logo i.active {
+    color: var(--page-main-color);
+}
+.header_logo a:hover {
+    color: var(--page-main-color);
+}
+.header_menu {
+    display: flex;
+    list-style: none;
+}
+.header_menu a {
+    margin: 0 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.header_menu a:hover {
+    font-weight: bolder;
+    color: var(--page-main-color)
+}
+.header_icons {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+.header_icons a {
+    margin: 0 20px;
+}
+.header_icons a:hover {
+    color: var(--icon-color);
+}
+.slideshow {
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.slideshow_slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 3s;
+}
+.slideshow_slide a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+.slideshow_slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+.slideshow_nav a {
+position: absolute;
+    left: 50%;
+    top: 50%;
+    color: var(--button-color);
+    font-size: 2rem;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+#prev {
+    margin-left: -700px;
+}
+#next {
+    margin-left: 668px;
+}
+.slideshow_indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+.slideshow_indicator a {
+    margin: 0 5px;
+    color: var(--button-color);
+    opacity: 0.5;
+}
+.slideshow_indicator a.active {
+    opacity: 1;
+}
+main {
+    width: 100%;
+    margin: 10px;
+}
+nav {
+    float: left;
+    width: 20%;
+    border: 1px dotted var(--border-color);
+    background-color: var(--main-color);
+    line-height: 846px;
+}
+section {
+    display: inline-block;
+    width: 50%;
+    border: 1px dotted var(--border-color);
+    background-color: var(--main-color);
+    padding: 10px
+}
+section>h2 {
+    margin: 10px 0 20px;
+}
+section div {
+    width: 100%;
+}
+table {
+    width: 100%;
+    padding: 5px;
+    background-color: var(--table-color)
+}
+tr, th, td {
+    justify-self: left;
+    width: 33%;
+    height: 30px;
+    left: 0;
+    box-sizing: border-box;
+    text-align: start;
+    padding-left: 5px;
+}
+#input_id{
+    background-color: var(--input-color);
+    padding-left: 50px;
+    color: gray;
+}
+input, select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--input-color)
+}
+span {
+    color: gray;
+    margin-left: 5px;
+    font-weight: 100;
+}
+#not_input {
+    border: 1px dotted var(--border-color);
+    height: 40px;
+    padding: 5px;
+    margin: 5px 0px;
+    line-height: 40px;
+    background-color: var(--table-color);
+}
+.button {
+    border: 1px solid var(--register-button-color);
+    height: 40px;
+    background-color: var(--register-button-color);
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: 900;
+    padding: 0;
+}
+/* .sec_header {
+    line-height: 150px;
+}
+.sec_article {
+    line-height: 500px;
+    margin: 10px 0;
+}
+.sec_footer {
+    line-height: 100px;
+} */
+aside {
+    float: right;
+    width: 20%;
+    border: 1px dotted var(--border-color);
+    background-color: var(--main-color);
+    line-height: 846px;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    border: 1px dotted var(--border-color);
+    margin: 10px;
+    line-height: 100px;
+    background-color: var(--footer-color);
+}

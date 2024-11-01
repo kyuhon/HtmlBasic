@@ -41,7 +41,7 @@ function carousel(){
             gotoslide(index);
         }, 3000);
     }
-    startTimer();
+    startTimer(0);
 
     //이벤트등록 핸들러기능
     slideshow_slides.addEventListener("mouseenter", (event)=>{
@@ -76,7 +76,7 @@ function carousel(){
     next.addEventListener("click", (event)=>{
         event.preventDefault(); //anchor tag 가지고 있는 페이지이동 기본기능을 막아라
         currentIndex = currentIndex + 1;
-        if(currentIndex < (slideCount -1)){
+        if(currentIndex > (slideCount -1)){
             currentIndex = 0;
         }
         gotoslide(currentIndex);
