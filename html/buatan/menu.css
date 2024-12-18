@@ -20,6 +20,8 @@ a {
     color: white;
 }
 ul > p {
+    font-style: italic;
+    font-size: 20px;
     color: white;
 }
 /* 메뉴css */
@@ -33,7 +35,7 @@ ul {
     align-items: center;
 }
 
-ul > li > a { 
+ul > li { 
     display: inline-block;
     width: 100px;
     padding: 10px 2px; 
@@ -44,7 +46,7 @@ ul > li > a {
 ul > li > div > a { 
     display: inline-block;
     color: black;
-    width: 100px;
+    width: 50px;
 
     text-align: center;
     text-overflow: ellipsis;
