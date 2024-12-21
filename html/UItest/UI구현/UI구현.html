@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./UI구현.css">
+    <script src="./UI구현.js"></script>
+</head>
+<body onload="onLoad();">
+    <form action="#">
+        <table>
+            <tr>
+                <th>아이디</th>
+                <td><input type="text" id="id" size="30px"></td><br><span></span>
+            </tr>
+            <tr>
+                <th>패스워드</th>
+                <td><input type="text" id="pwd1" size="30px" title="영문과 대/소문자 특수문자, 숫자 포함 8 ~ 32글자"></td><br><span></span>
+            </tr>
+            <tr>
+                <th>패스워드 확인</th>
+                <td><input type="text" id="pw2" size="30px"></td><br><span></span>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td><input type="email" size="30px"></td>
+            </tr>
+            <tr>
+                <th rowspan="2">주소</th>
+                <td><input type="text" size="30px"></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="30px"></td>
+            </tr>
+        </table>
+        <button type="button">가입</button>
+    </form>
+</body>
+</html>
