@@ -95,11 +95,7 @@ ul  > li:hover > a {
     justify-content: flex-end;
 }
 
-.heart{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-}
+
 
 .main_image{
     position: relative;

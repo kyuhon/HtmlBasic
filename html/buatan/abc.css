@@ -1,0 +1,66 @@
+.board td {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.board td a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.board td a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+
+table tr:first-child {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+tr > td:first-child {
+    width: 50px;
+}
+
+tr > td:nth-child(2) {
+    width: 300px;
+    text-align: left;
+}
+
+tr > td:last-child {
+    text-align: right;
+}
+
+
+table td {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+table td a {
+    text-decoration: none;
+    color: rgb(79, 219, 79);
+}
+
+
+
+.board a {
+    text-decoration: none;
+}
+
+.board a:hover {
+    color: rgb(79, 219, 79);
+}
